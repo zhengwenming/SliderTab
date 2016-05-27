@@ -18,6 +18,7 @@
 		708275F81C9502E400D5A532 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708275F71C9502E400D5A532 /* RecommendViewController.m */; };
 		708275FB1C95052B00D5A532 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708275FA1C95052B00D5A532 /* ContainerViewController.m */; };
 		708275FF1C95185B00D5A532 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708275FE1C95185B00D5A532 /* DetailViewController.m */; };
+		70EBBD9F1CF8618A00716019 /* sliderTab.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70EBBD9E1CF8618A00716019 /* sliderTab.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		708275FA1C95052B00D5A532 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		708275FD1C95185B00D5A532 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		708275FE1C95185B00D5A532 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		70EBBD9E1CF8618A00716019 /* sliderTab.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sliderTab.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		708275D51C9500D800D5A532 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70EBBD9E1CF8618A00716019 /* sliderTab.gif */,
 				708275D61C9500D800D5A532 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -180,6 +183,7 @@
 				708275E51C9500D800D5A532 /* LaunchScreen.storyboard in Resources */,
 				708275E21C9500D800D5A532 /* Assets.xcassets in Resources */,
 				708275E01C9500D800D5A532 /* Main.storyboard in Resources */,
+				70EBBD9F1CF8618A00716019 /* sliderTab.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +348,7 @@
 				708275EB1C9500D800D5A532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
