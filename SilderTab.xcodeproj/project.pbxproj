@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		708275D71C9500D800D5A532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 708275D61C9500D800D5A532 /* main.m */; };
+		708275DA1C9500D800D5A532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 708275D91C9500D800D5A532 /* AppDelegate.m */; };
+		708275E01C9500D800D5A532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708275DE1C9500D800D5A532 /* Main.storyboard */; };
+		708275E21C9500D800D5A532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 708275E11C9500D800D5A532 /* Assets.xcassets */; };
+		708275E51C9500D800D5A532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708275E31C9500D800D5A532 /* LaunchScreen.storyboard */; };
+		708275EF1C9502AA00D5A532 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708275EE1C9502AA00D5A532 /* HomeViewController.m */; };
+		708275F21C9502BD00D5A532 /* NearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708275F11C9502BD00D5A532 /* NearbyViewController.m */; };
+		708275F51C9502CF00D5A532 /* SquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708275F41C9502CF00D5A532 /* SquareViewController.m */; };
+		708275F81C9502E400D5A532 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708275F71C9502E400D5A532 /* RecommendViewController.m */; };
+		708275FB1C95052B00D5A532 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708275FA1C95052B00D5A532 /* ContainerViewController.m */; };
+		708275FF1C95185B00D5A532 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708275FE1C95185B00D5A532 /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		708275D21C9500D800D5A532 /* SilderTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilderTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		708275D61C9500D800D5A532 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		708275D81C9500D800D5A532 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		708275D91C9500D800D5A532 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		708275DF1C9500D800D5A532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		708275E11C9500D800D5A532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		708275E41C9500D800D5A532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		708275E61C9500D800D5A532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		708275ED1C9502AA00D5A532 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		708275EE1C9502AA00D5A532 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		708275F01C9502BD00D5A532 /* NearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyViewController.h; sourceTree = "<group>"; };
+		708275F11C9502BD00D5A532 /* NearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyViewController.m; sourceTree = "<group>"; };
+		708275F31C9502CF00D5A532 /* SquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareViewController.h; sourceTree = "<group>"; };
+		708275F41C9502CF00D5A532 /* SquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareViewController.m; sourceTree = "<group>"; };
+		708275F61C9502E400D5A532 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
+		708275F71C9502E400D5A532 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		708275F91C95052B00D5A532 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		708275FA1C95052B00D5A532 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		708275FD1C95185B00D5A532 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		708275FE1C95185B00D5A532 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		708275CF1C9500D800D5A532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		708275C91C9500D800D5A532 = {
+			isa = PBXGroup;
+			children = (
+				708275D41C9500D800D5A532 /* SilderTab */,
+				708275D31C9500D800D5A532 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		708275D31C9500D800D5A532 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				708275D21C9500D800D5A532 /* SilderTab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		708275D41C9500D800D5A532 /* SilderTab */ = {
+			isa = PBXGroup;
+			children = (
+				708275D81C9500D800D5A532 /* AppDelegate.h */,
+				708275D91C9500D800D5A532 /* AppDelegate.m */,
+				708275EC1C95029600D5A532 /* Home */,
+				708275DE1C9500D800D5A532 /* Main.storyboard */,
+				708275E11C9500D800D5A532 /* Assets.xcassets */,
+				708275E31C9500D800D5A532 /* LaunchScreen.storyboard */,
+				708275E61C9500D800D5A532 /* Info.plist */,
+				708275D51C9500D800D5A532 /* Supporting Files */,
+			);
+			path = SilderTab;
+			sourceTree = "<group>";
+		};
+		708275D51C9500D800D5A532 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				708275D61C9500D800D5A532 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		708275EC1C95029600D5A532 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				708275ED1C9502AA00D5A532 /* HomeViewController.h */,
+				708275EE1C9502AA00D5A532 /* HomeViewController.m */,
+				708275FD1C95185B00D5A532 /* DetailViewController.h */,
+				708275FE1C95185B00D5A532 /* DetailViewController.m */,
+				708275FC1C95053500D5A532 /* vcs */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		708275FC1C95053500D5A532 /* vcs */ = {
+			isa = PBXGroup;
+			children = (
+				708275F91C95052B00D5A532 /* ContainerViewController.h */,
+				708275FA1C95052B00D5A532 /* ContainerViewController.m */,
+				708275F01C9502BD00D5A532 /* NearbyViewController.h */,
+				708275F11C9502BD00D5A532 /* NearbyViewController.m */,
+				708275F31C9502CF00D5A532 /* SquareViewController.h */,
+				708275F41C9502CF00D5A532 /* SquareViewController.m */,
+				708275F61C9502E400D5A532 /* RecommendViewController.h */,
+				708275F71C9502E400D5A532 /* RecommendViewController.m */,
+			);
+			name = vcs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		708275D11C9500D800D5A532 /* SilderTab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 708275E91C9500D800D5A532 /* Build configuration list for PBXNativeTarget "SilderTab" */;
+			buildPhases = (
+				708275CE1C9500D800D5A532 /* Sources */,
+				708275CF1C9500D800D5A532 /* Frameworks */,
+				708275D01C9500D800D5A532 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SilderTab;
+			productName = SilderTab;
+			productReference = 708275D21C9500D800D5A532 /* SilderTab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		708275CA1C9500D800D5A532 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = zhengwenming;
+				TargetAttributes = {
+					708275D11C9500D800D5A532 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 708275CD1C9500D800D5A532 /* Build configuration list for PBXProject "SilderTab" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 708275C91C9500D800D5A532;
+			productRefGroup = 708275D31C9500D800D5A532 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				708275D11C9500D800D5A532 /* SilderTab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		708275D01C9500D800D5A532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708275E51C9500D800D5A532 /* LaunchScreen.storyboard in Resources */,
+				708275E21C9500D800D5A532 /* Assets.xcassets in Resources */,
+				708275E01C9500D800D5A532 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		708275CE1C9500D800D5A532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708275DA1C9500D800D5A532 /* AppDelegate.m in Sources */,
+				708275F21C9502BD00D5A532 /* NearbyViewController.m in Sources */,
+				708275FB1C95052B00D5A532 /* ContainerViewController.m in Sources */,
+				708275FF1C95185B00D5A532 /* DetailViewController.m in Sources */,
+				708275D71C9500D800D5A532 /* main.m in Sources */,
+				708275EF1C9502AA00D5A532 /* HomeViewController.m in Sources */,
+				708275F51C9502CF00D5A532 /* SquareViewController.m in Sources */,
+				708275F81C9502E400D5A532 /* RecommendViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		708275DE1C9500D800D5A532 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				708275DF1C9500D800D5A532 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		708275E31C9500D800D5A532 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				708275E41C9500D800D5A532 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		708275E71C9500D800D5A532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		708275E81C9500D800D5A532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		708275EA1C9500D800D5A532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SilderTab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wenming.SilderTab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		708275EB1C9500D800D5A532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SilderTab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wenming.SilderTab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		708275CD1C9500D800D5A532 /* Build configuration list for PBXProject "SilderTab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708275E71C9500D800D5A532 /* Debug */,
+				708275E81C9500D800D5A532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		708275E91C9500D800D5A532 /* Build configuration list for PBXNativeTarget "SilderTab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708275EA1C9500D800D5A532 /* Debug */,
+				708275EB1C9500D800D5A532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 708275CA1C9500D800D5A532 /* Project object */;
+}
