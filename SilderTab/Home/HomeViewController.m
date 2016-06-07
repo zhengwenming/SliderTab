@@ -36,7 +36,9 @@
 }
 
 -(void)testNavTab:(UIButton *)sender{
-    [self.navigationController pushViewController:[ContainerViewController new] animated:YES];
+    ContainerViewController *containerVC = [ContainerViewController new];
+    containerVC.currentIndex = 2;//注意⚠不要设置超过tab的个数，index从0开始。
+    [self.navigationController pushViewController:containerVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

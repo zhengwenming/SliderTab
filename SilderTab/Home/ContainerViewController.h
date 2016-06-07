@@ -14,5 +14,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ContainerViewController : UIViewController
+/**
+ *  控制跳转到某个tab的参数，默认为0，就是第一个tab
+ */
+@property (nonatomic , assign) NSInteger currentIndex;
 
 @end
