@@ -11,7 +11,9 @@
  
    Copyright © 2016年 zhengwenming. All rights reserved.
  */
-
+#ifndef __OPTIMIZE__
+#define NSLog(...) printf("%f %s\n",[[NSDate date]timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+#endif
 #import "ContainerViewController.h"
 #import "NearbyViewController.h"
 #import "SquareViewController.h"
@@ -112,6 +114,8 @@
     [super viewDidLoad];
     [self initUI];
     [self setMainSrollView];
+    //设置默认
+    [self sliderWithTag:self.currentIndex+1];
 }
 #pragma mark
 #pragma mark 初始化srollView
@@ -147,6 +151,9 @@
     }
 }
 -(void)sliderAction:(UIButton *)sender{
+    if (self.currentIndex==sender.tag) {
+        return;
+    }
     [self sliderAnimationWithTag:sender.tag];
     [UIView animateWithDuration:0.3 animations:^{
         mainScrollView.contentOffset = CGPointMake(kScreenWidth*(sender.tag-1), 0);
@@ -155,6 +162,7 @@
     }];
 }
 -(void)sliderAnimationWithTag:(NSInteger)tag{
+    self.currentIndex = tag;
     nearbyBtn.selected = NO;
     squareBtn.selected = NO;
     recommendBtn.selected = NO;
@@ -171,9 +179,32 @@
         sender.titleLabel.font = [UIFont boldSystemFontOfSize:19];
     }];
 }
+-(void)sliderWithTag:(NSInteger)tag{
+    self.currentIndex = tag;
+    nearbyBtn.selected = NO;
+    squareBtn.selected = NO;
+    recommendBtn.selected = NO;
+    UIButton *sender = [self buttonWithTag:tag];
+    sender.selected = YES;
+    //动画
+        sliderLabel.frame = CGRectMake(sender.frame.origin.x, sliderLabel.frame.origin.y, sliderLabel.frame.size.width, sliderLabel.frame.size.height);
+        nearbyBtn.titleLabel.font = [UIFont boldSystemFontOfSize:16];
+        squareBtn.titleLabel.font = [UIFont boldSystemFontOfSize:16];
+        recommendBtn.titleLabel.font = [UIFont boldSystemFontOfSize:16];
+        sender.titleLabel.font = [UIFont boldSystemFontOfSize:19];
+}
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    double index_ = scrollView.contentOffset.x/kScreenWidth;
-    [self sliderAnimationWithTag:(int)(index_+0.5)+1];
+    //实时计算当前位置,实现和titleView上的按钮的联动
+    CGFloat contentOffSetX = scrollView.contentOffset.x;
+    CGFloat X = contentOffSetX * (3*kScreenWidth/4)/kScreenWidth/3;
+    CGRect frame = sliderLabel.frame;
+    frame.origin.x = X;
+    sliderLabel.frame = frame;
+}
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    CGFloat contentOffSetX = scrollView.contentOffset.x;
+        int index_ = contentOffSetX/kScreenWidth;
+    [self sliderWithTag:index_+1];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
